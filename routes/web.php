@@ -13,6 +13,26 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+//1
+Route::get('/hello', function () {
+    return 'Hello World';
+});
+
+//2
+Route::get('/world', function () {
+    return 'World';
+});
+
+//3
 Route::get('/', function () {
-    return view('welcome');
+    return 'Selamat Datang';
+});
+
+//4
+Route::get('/about', function () {
+    return 'Anggel Dwi Pramita (2241760019)';
 });
