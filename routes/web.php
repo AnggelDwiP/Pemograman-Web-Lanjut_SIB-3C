@@ -36,3 +36,18 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return 'Anggel Dwi Pramita (2241760019)';
 });
+
+//5
+Route::get('/user/{name}', function ($name) {
+    return 'Nama Saya '.$name;
+});
+
+//6
+Route::get('/posts/{post}/comments/{comment}', function ($postId, $commentId) {
+    return 'Pos ke-'.$postId." Komentar ke-: ".$commentId;
+});
+
+//7
+Route::get('/articles/{id}', function ($id) {
+    return 'Halaman Artikel dengan ID '.$id;
+});
