@@ -51,3 +51,13 @@ Route::get('/posts/{post}/comments/{comment}', function ($postId, $commentId) {
 Route::get('/articles/{id}', function ($id) {
     return 'Halaman Artikel dengan ID '.$id;
 });
+
+//8
+Route::get('/user/{name?}', function ($name=null) {
+    return 'Nama Saya '.$name;
+});
+
+//9
+Route::get('/user/{name?}', function ($name='Anggel') {
+    return 'Nama Saya '.$name;
+});
