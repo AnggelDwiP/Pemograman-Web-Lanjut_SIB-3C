@@ -100,3 +100,8 @@ Route::resource('photos', PhotoController::class)->except([
 
 //Praktikum 3
 //1
+Route::get('/greeting', function () {  return view('hello', ['name' => 'Anggel']); }); 
+//2
+Route::get('/greeting', function () {  return view('blog.hello', ['name' => 'Anggel']); }); 
+//3
+Route::get('/greeting', [WelcomeController::class, 'greeting']); 
